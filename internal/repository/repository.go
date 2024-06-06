@@ -10,4 +10,5 @@ type DatabaseRepo interface {
 	AllMovies() ([]*models.Movie, error)
 	GetUserByEmail(email string) (*models.User, error)
 	GetUserByID(id int) (*models.User, error)
+	GetUserByName(name string) (*models.User, error)
 }
